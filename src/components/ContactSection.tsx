@@ -103,7 +103,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-muted-foreground">
-                      ajmakwana1515@gmail.com
+                      ajmakwana115@gmail.com
                     </p>
                   </div>
 

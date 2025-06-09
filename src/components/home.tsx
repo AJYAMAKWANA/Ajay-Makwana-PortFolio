@@ -92,31 +92,31 @@ const Home = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-12 md:py-20">
+        <section id="skills" className="py-12 md:py-0">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               My Skills
-            </h2>
+            </h2> */}
             <SkillsSection />
           </motion.div>
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-12 md:py-20">
+        <section id="projects" className="py-12 md:py-0">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               My Projects
-            </h2>
+            </h2> */}
             <ProjectShowcase />
           </motion.div>
         </section>
@@ -129,9 +129,9 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               Get In Touch
-            </h2>
+            </h2> */}
             <ContactSection />
           </motion.div>
         </section>

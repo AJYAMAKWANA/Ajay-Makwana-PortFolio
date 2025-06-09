@@ -19,8 +19,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server: {
-    // @ts-ignore
+server: {
+    cors: true,
     allowedHosts: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    }
   }
 });

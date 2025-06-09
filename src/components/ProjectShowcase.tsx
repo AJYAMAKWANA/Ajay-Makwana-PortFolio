@@ -41,7 +41,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.tradgo&hl=en_IN&gl=US",
       image:
-        "https://play-lh.googleusercontent.com/3QdHVxpTnGMN0LXtoCu6iZB9zaOmaj5pxelGid2QGV0Y3L-fqn9rjXvwGn_Hyd9KbQ=w240-h480-rw",
+        "/images/tradgo.webp",
     },
     {
       title: "TradGo Partners",
@@ -60,7 +60,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.tradgobusiness&hl=en_ZA&gl=US",
       image:
-        "https://play-lh.googleusercontent.com/19LA-xqkrvApX0U186h16i6-gVgCQuk4zg997hDgKeFklMWHHRZbFnlF-_fLyJHpD3Q=w240-h480-rw",
+        "/images/tradgo_business.webp",
     },
     {
       title: "Tradgo Distributor",
@@ -78,7 +78,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.new_tradgo_distributor&hl=en_IN",
       image:
-        "https://play-lh.googleusercontent.com/qvtvhe5VsyMvOM3AqyrT7VAbe6DsHnw0qESctqidIwFQ5fxXzVv9NNFewed0LggL3Fod=s124-rw",
+        "/images/tradgo_distributor.webp",
     },
     {
       title: "PDRS Attendance",
@@ -98,7 +98,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.pdrs_Attendance&hl=en_IN",
       image:
-        "https://play-lh.googleusercontent.com/OJvTkTpBKoGtHa_hmntVO_ajDhGUI05tkk409E3l2jzOsPIpMFqlUzEVkChzsIdEFTpD=w240-h480-rw",
+        "/images/pdrs_attendance.webp",
     },
     {
       title: "Health Care Anywhere",
@@ -123,7 +123,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.doctorplusmedicare&hl=en_IN",
       image:
-        "https://play-lh.googleusercontent.com/aeG_Ma-7nMQDkmhkkHn_iw3nm1BFlQFg0adc-2rYJCbMEXRfeu4Lr6CE2R_qXD82104=w240-h480-rw",
+        "/images/helth_care.webp",
     },
 
     {
@@ -147,7 +147,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.newRechargeInfotech&hl=en_IN",
       image:
-        "https://play-lh.googleusercontent.com/mYWFIktdObF5C6lgSfdchAikCygyrch1ddZ10TY3X8BdjsmHBHf_vaWOeKP7daxgzdQ=w240-h480-rw",
+        "/images/recharge_infotech.webp",
     },
 
     {
@@ -166,7 +166,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.zapptech&hl=en_IN",
       image:
-        "https://play-lh.googleusercontent.com/Vj6Wwm_NMekOty_HUXyqwWwNm6cQsrgNwVWmo_mLUT4Q2H32Q1kk4KpaWlbURHqXlA=w240-h480-rw",
+        "/images/zeptech.webp",
     },
 
     {
@@ -190,7 +190,7 @@ const ProjectShowcase = ({
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.mdocfinder&hl=en_IN",
       image:
-        "https://play-lh.googleusercontent.com/Uofs89Zq9iM2vIQf9unummJQyBSEfy3b1BxcwKaqvZGyPZ85hpac70HvikR_OCcet7U=w240-h480-rw",
+      "/images/doctor4you.webp",
     },
   ],
 }: ProjectShowcaseProps) => {

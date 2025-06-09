@@ -25,14 +25,15 @@ const HeroSection = ({
   name = "Ajay Makwana",
   title = "Flutter Developer at PDRS Multitrade Pvt. Ltd.",
   phone = "+91 9824232491",
-  email = "ajmakwana1515@gmail.com",
-  address = "H-1301, Parshavpark Phase - 2, Near Khokhra Circle, Maninagar, Ahmedabad - 380008",
+  email = "ajmakwana115@gmail.com",
+  address = "H-1301, Parishkar Phase - 2, Near Khokhra Circle, Maninagar, Ahmedabad - 380008",
   languages = ["English", "Gujarati", "Hindi"],
   hobbies = ["Traveling", "Learning New Technology", "Cricket"],
   education = {
     institution: "M.P. Shah Arts & Science College",
     period: "July 2020 – May 2023",
-    degree: "Undergraduate",
+    // degree: "Undergraduate",
+    degree: "Bsc",
     university: "Saurashtra University",
   },
 }: HeroSectionProps) => {
