@@ -43,6 +43,7 @@ const ProjectShowcase = ({
       image:
         "/images/tradgo.webp",
     },
+
     {
       title: "TradGo Partners",
       description:
@@ -62,6 +63,7 @@ const ProjectShowcase = ({
       image:
         "/images/tradgo_business.webp",
     },
+
     {
       title: "Tradgo Distributor",
       description:
@@ -80,6 +82,7 @@ const ProjectShowcase = ({
       image:
         "/images/tradgo_distributor.webp",
     },
+
     {
       title: "PDRS Attendance",
       description:
@@ -100,6 +103,26 @@ const ProjectShowcase = ({
       image:
         "/images/pdrs_attendance.webp",
     },
+
+     {
+      title: "Mobile Recharge Commission App",
+      description:
+        "Mobile Recharge Commission App is a one-stop platform for all your prepaid mobile and DTH recharge needs, offering high commissions and real-time rewards. Whether you're a user looking for cashback or a retailer wanting to earn commissions, this app gives you the tools to recharge and grow your earnings effortlessly.",
+      features: [
+        "24x7 Live Chat Support",
+        "No Joining Fees – Join instantly and start earning",
+        "Instant Refunds – On all failed transactions",
+        "Refer & Earn – Invite friends and earn exciting rewards",
+        "Commission on Every Transaction – Get paid for every recharge",
+        "Mobile Recharge with High Commission",
+        "DTH Recharge Services",
+      ],
+      playStoreLink:
+        "https://play.google.com/store/apps/details?id=com.FreeRechargeApp&hl=en_IN",
+      image:
+        "/images/mobile_recharge_commision.webp",
+    },
+
     {
       title: "Health Care Anywhere",
       description:
