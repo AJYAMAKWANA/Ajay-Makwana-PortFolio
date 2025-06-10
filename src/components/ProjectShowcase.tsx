@@ -28,15 +28,20 @@ const ProjectShowcase = ({
     {
       title: "TradGo Recharge & Bill Payment",
       description:
-        "A comprehensive mobile application for recharge, bill payments, money transfer, and more.",
+        "A comprehensive mobile application for recharge, bill payments, money transfer, travel bookings, shopping, and more.",
       features: [
-        "Mobile Recharge & Bill Payments Module",
-        "Money Transfer Module",
-        "Aadhaar Enabled Payment System (AEPS)",
-        "Report Module",
-        "Nearby Service Module",
-        "KYC Module",
-        "Integration with Native Third-Party SDK",
+       "Mobile Recharge & Bill Payments Module",
+    "Money Transfer Module",
+    "Aadhaar Enabled Payment System (AEPS)",
+    "Flight Booking Module",
+    "Hotel Booking Module",
+    "Bus Booking Module",
+    "Gift Card Module",
+    "Online Shopping Module",
+    "Report Module",
+    "Nearby Service Module",
+    "KYC Module",
+    "Integration with Native Third-Party SDK"
       ],
       playStoreLink:
         "https://play.google.com/store/apps/details?id=com.tradgo&hl=en_IN&gl=US",
