@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from "emailjs-com";
+
 
 interface ContactSectionProps {
   className?: string;
@@ -43,25 +45,45 @@ const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
   //   }, 1500);
   // };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ 
+
+const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
 
-  const { name, email, subject, message } = formData;
-  const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
-  const whatsappUrl = `https://wa.me/919824232491?text=${whatsappMessage}`;
+  const templateParams = {
+    from_name: formData.name,
+    from_email: formData.email,
+    subject: formData.subject,
+    message: formData.message,
+  };
 
-  // Simulate form submission and toast
-  setTimeout(() => {
-    window.open(whatsappUrl, "_blank"); // Open WhatsApp chat with pre-filled message
+  try {
+    await emailjs.send(
+      "service_j49xqhl",     // replace this
+      "template_wuvaymi",    // replace this
+      templateParams,
+      "K1eViFmUb8AcjfakW"  // replace this
+    );
+
     toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I’ll reply on WhatsApp shortly.",
+      title: "Message sent via Email!",
+      description: "Thank you for reaching out. I'll reply to your email shortly.",
     });
+
     setFormData({ name: "", email: "", subject: "", message: "" });
+  } catch (error) {
+    toast({
+      title: "Failed to send email",
+      description: "Something went wrong. Please try again later.",
+    });
+    console.error("Email error:", error);
+  } finally {
     setIsSubmitting(false);
-  }, 1500);
+  }
 };
+
+  
 
   const socialLinks = [
     {
