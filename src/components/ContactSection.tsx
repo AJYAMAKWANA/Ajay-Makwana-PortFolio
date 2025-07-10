@@ -28,20 +28,40 @@ const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message sent!",
+  //       description: "Thank you for reaching out. I'll get back to you soon.",
+  //     });
+  //     setFormData({ name: "", email: "", subject: "", message: "" });
+  //     setIsSubmitting(false);
+  //   }, 1500);
+  // };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const { name, email, subject, message } = formData;
+  const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+  const whatsappUrl = `https://wa.me/919824232491?text=${whatsappMessage}`;
+
+  // Simulate form submission and toast
+  setTimeout(() => {
+    window.open(whatsappUrl, "_blank"); // Open WhatsApp chat with pre-filled message
+    toast({
+      title: "Message sent!",
+      description: "Thank you for reaching out. I’ll reply on WhatsApp shortly.",
+    });
+    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(false);
+  }, 1500);
+};
 
   const socialLinks = [
     {
@@ -110,8 +130,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
                   <div>
                     <p className="font-medium">Address</p>
                     <p className="text-muted-foreground">
-                      H-1301, Parshavpark Phase - 2, Near Khokhra Circle,
-                      Maninagar, Ahmedabad - 380008
+                      H-1301, Parishkar Phase - 2, Near Khokhra Circle, Maninagar, Ahmedabad - 380008
                     </p>
                   </div>
                 </div>
