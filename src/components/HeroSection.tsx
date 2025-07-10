@@ -10,8 +10,8 @@ interface HeroSectionProps {
   title?: string;
   phone?: string;
   email?: string;
-  address?: string;
-  languages?: string[];
+  address?: string; 
+  languages?: string[]; 
   hobbies?: string[];
   education?: {
     institution: string;
@@ -139,7 +139,7 @@ const HeroSection = ({
                 <CardContent className="pt-6">
                   <h3 className="text-lg font-semibold mb-4 flex items-center">
                     <Briefcase className="mr-2 h-5 w-5" />
-                    Contact Information
+                    Contact Information 
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
